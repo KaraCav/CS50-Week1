@@ -21,10 +21,15 @@ int main(void)
     }
     for(int i = 0; i < user_number; i++) {
        // printf("#");
-        for(int j = 0; j < user_number; j++) {
-              printf("%i ", i);
+        for(int j = user_number; j > i; j--) {
+       //     printf("%i ", i);
             printf("#");
         }
+         printf("  ");
+        for(int j = 0; j <= i; j++) {
+            printf("#");
+        }
+
          printf("\n");
     }
 }
